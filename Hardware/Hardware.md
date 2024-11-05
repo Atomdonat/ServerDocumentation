@@ -8,6 +8,19 @@
 ![[Serverschrank_Diagram.pdf]]
 
 ## Management and Backupserver
+- **Manufacturer:** Dell
+- **Product Name:** [OptiPlex 7010 MT](https://www.hardware-corner.net/desktop-models/Dell-OptiPlex-7010-MT/) (Service-Tag: 9FVBKY1; 2012)
+- **CPU:** 3rd Gen Intel Core i3-3220 Processor (Dual Core, 3.30GHz, 3MB, w/ HD2500 Graphics)
+- **Mainboard:** E93839 LA0531
+- **RAM:** 4 DIMM DDR3-1333/1600 max 32 GB
+- **GPU:** integrated
+- **Storage:**
+	- 4x SATA3
+- **PCI Slots:** PCIe 3.0 x16; PCIe 2.0 x1; PCI; PCIe 2.0 x16 (wired x4)
+- **Drive bays:** (2x) 3.5in/2.5in; (2x) 5.25in
+- **Power:** ATX 275 W
+- **Network:** 
+	- WAN: OnBoard Ethernet (1x 1 GbE)
 
 ## DMZ Router
 - **Manufacturer:** Dell
@@ -17,12 +30,13 @@
 - **RAM:** 4 DIMM DDR3-1333/1600 max 32 GB
 - **GPU:** integrated
 - **Storage:**
-	- 4x SATA
+	- 4x SATA3
 - **PCI Slots:** PCIe 3.0 x16; PCIe 2.0 x1; PCI; PCIe 2.0 x16 (wired x4)
 - **Drive bays:** (2x) 3.5in/2.5in; (2x) 5.25in
 - **Power:** ATX 275 W
-- **Network:** Gigabit Ethernet (10/100/1000 Mbps)
-- **Modifications:**
+- **Network:** 
+	- WAN: OnBoard Ethernet (1x 1 GbE)
+	- LAN: [Intel Ethernet Adapter I350-T4](https://ark.intel.com/content/www/us/en/ark/products/184824/intel-ethernet-network-adapter-i350-t4-for-ocp-3-0.html) (4x 1 GbE)
 
 ## Router
 - **Manufacturer:** AVM
@@ -31,8 +45,8 @@
 - **Firmware:** OpenWrt 22.03.5
 - **MGMT:** LuCI openwrt-22.03
 - **Network:**
-	- 1xWAN (RJ-45, 1Gbit/s)
-	- 4xLAN (RJ-45, 1Gbit/s)
+	- WAN (RJ-45, 1x 1 GbE)
+	- LAN (RJ-45, 4x 1 GbE)
 - **Power:** (18W, barrel tip 5.5mm/2.5mm)
 
 ## Switch
@@ -49,7 +63,6 @@
 - **Product Name:** PowerEdge R520
 - **CPU:** 2x Intel Xeon E5-2407 (2.2GHz, 10MB Cache)
 - **RAM:** 4x Hynix HMT325R7CFR8A (DDR3, 2GB, 1333MHz, 1.35V)
-- **GPU:** ---
 - **Storage:**
 	- 1x Intenso High Performance 3813430 (SATA3 6Gb/s, 2.5", 120GB, 520MB Cache)
 	- 2x Seagate Cheetah ST3300657SS (SAS 6Gb/s, 3.5", 300GB, 15K.7, 16MB Cache)
@@ -64,8 +77,7 @@
 - **Manufacturer:** Dell
 - **Product Name:** PowerEdge R520
 - **CPU:** 2x Intel Xeon E5-2407 (2.2GHz, 10MB Cache)
-- **RAM:** 8x Micron MT18KSF51272PDZ-1G4M1FF (DDR3, 4GB, 1333MHz, 1.35V)
-- **GPU:** ---
+	- **RAM:** 8x Micron MT18KSF51272PDZ-1G4M1FF (DDR3, 4GB, 1333MHz, 1.35V)
 - **Storage:**
 	- 1x Intenso High Performance 3813430 (SATA3 6Gb/s, 2.5", 120GB, 520MB Cache)
 	- 3x Seagate Constellation ES ST2000NM0001 (SAS 6Gb/s, 3.5", 2TB, 7.2K, 64MB Cache)
