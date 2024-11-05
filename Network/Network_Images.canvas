@@ -1,8 +1,8 @@
 {
 	"nodes":[
 		{"id":"5f5ba19aff0ff462","type":"link","url":"https://www.reddit.com/r/homelab/comments/bf3tob/comment/elaosb1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button","x":-1240,"y":-366,"width":400,"height":400},
-		{"id":"017c5c83f8dcbcee","type":"file","file":"Network_Layout_dark.png","x":-1240,"y":-640,"width":400,"height":219},
-		{"id":"43015ad98e15dc6a","x":-660,"y":-366,"width":400,"height":400,"type":"file","file":"Network.md"}
+		{"id":"017c5c83f8dcbcee","type":"file","file":"Network/Network_Layout_dark.png","x":-1240,"y":-640,"width":349,"height":219},
+		{"id":"43015ad98e15dc6a","type":"file","file":"Network/Network.md","x":-660,"y":-366,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"edf5ae7dd5a7f424","fromNode":"5f5ba19aff0ff462","fromSide":"right","toNode":"43015ad98e15dc6a","toSide":"left"},
