@@ -1,8 +1,15 @@
+# DMZ Router
 
+# NAS
 
-# Wireguard on Proxy
+# Gameserver
+
+# MGMT
+
+# Proxy/VPS
+## Wireguard on Proxy
 Ubuntu Server acting as public Network Gateway (Proxy)
-## Preparing the Server
+### Preparing the Server
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install wireguard iptables iproute2 nginx
@@ -12,7 +19,7 @@ sudo sysctl -w net.ipv4.ip_forward=1
 sudo nano /etc/sysctl.conf # uncomment `net.ipv4.ip_forward=1`
 sudo sysctl -p
 ```
-## Wireguard Installation
+### Wireguard Installation
 ```bash
 id add # get name/id of loopback-interface and public-interface
 wg genkey | tee privatekey | wg pubkey > publickey
@@ -52,7 +59,7 @@ ping ${client-ip-address}
 ping 8.8.8.8
 ```
 
-### Update Peer Endpoint Address
+#### Update Peer Endpoint Address
 - Template:
 	1) remove deprecated Peer `sudo wg set wg0 peer ${client-public-key} remove`
 	2) re-add Peer  `sudo wg set wg0 peer ${client-public-key} allowed-ips ${client-ip-address}/32,${client-routing-address}/${client-routing-cidr}`
