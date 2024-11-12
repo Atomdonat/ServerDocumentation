@@ -1,7 +1,9 @@
 # DMZ Router
 
 # NAS
-
+- RAID:
+	- 2x Boot SSD with RAID-1/mirrored
+	- 4x NAS HDDs with ZFS RAID-Z2 ($\leq 2$ Drive failures)
 # Gameserver
 
 # MGMT
